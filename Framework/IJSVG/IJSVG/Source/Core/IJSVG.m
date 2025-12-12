@@ -744,4 +744,10 @@
     return [_rootNode containsNodesMatchingTraits:traits];
 }
 
+- (BOOL)isMonochrome {
+    BOOL m = self.colors.count == 1;
+    _rootLayer = nil;
+    return m;
+}
+
 @end

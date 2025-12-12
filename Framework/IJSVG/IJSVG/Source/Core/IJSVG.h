@@ -145,6 +145,9 @@
 - (void)drawInRect:(CGRect)rect
            context:(CGContextRef)context;
 
+
+- (BOOL) isMonochrome;
+
 - (NSData*)PDFData;
 - (NSData*)PDFData:(NSError**)error;
 - (NSData*)PDFDataWithRect:(CGRect)rect;
