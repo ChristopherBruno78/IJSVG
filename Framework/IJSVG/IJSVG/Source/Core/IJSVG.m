@@ -750,4 +750,14 @@
     return m;
 }
 
+- (NSColor *)firstColor {
+    NSSet * colors = self.colors.colors;
+    if ( [colors count] > 0) {
+        return [[self.colors.colors allObjects] objectAtIndex:0].color;
+    }
+    
+    return nil;
+    
+}
+
 @end

@@ -146,7 +146,8 @@
            context:(CGContextRef)context;
 
 
-- (BOOL) isMonochrome;
+- (BOOL)isMonochrome;
+- (NSColor *)firstColor; 
 
 - (NSData*)PDFData;
 - (NSData*)PDFData:(NSError**)error;
